@@ -1,11 +1,10 @@
-// import * as heic2any from 'heic2any';
-const heic2any = require('heic2any');
+import heic2any from 'heic2any';
 
+// TODO: allow to pass options
 export const heicPreviewer = async (file: File): Promise<Blob> => {
   const preview = await heic2any({
     blob: file,
-    // "image/jpeg", "image/png" or "image/gif"
-    toType: 'image/jpeg',
+    toType: 'image/jpeg', // "image/jpeg", "image/png" or "image/gif"
     quality: 1
   });
 
