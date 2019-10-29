@@ -1,0 +1,40 @@
+{
+  "name": "heic-preview",
+  "version": "0.0.1",
+  "description": "Converts HEIC into something the browser can preview",
+  "main": "dist/es5/index.js",
+  "jsnext:main": "dist/es2015/index.js",
+  "module": "dist/es2015/index.js",
+  "types": "dist/es5/index.d.ts",
+  "scripts": {
+    "bootstrap": "ts-react-toolbox init",
+    "dev": "ts-react-toolbox dev",
+    "test": "ts-react-toolbox test",
+    "test:ci": "ts-react-toolbox test --runInBand --coverage",
+    "build": "ts-react-toolbox build",
+    "release": "ts-react-toolbox release",
+    "lint": "ts-react-toolbox lint",
+    "static": "ts-react-toolbox publish",
+    "format": "ts-react-toolbox format",
+    "analyze": "ts-react-toolbox analyze"
+  },
+  "devDependencies": {
+    "@atlaskit/button": "^13.3.3",
+    "@atlaskit/icon": "^19.0.8",
+    "react-stylish-input": "^0.0.2",
+    "ts-react-toolbox": "^0.2.11"
+  },
+  "repository": "git@github.com:zzarcon/heic-preview.git",
+  "author": "Hector Leon Zarco Garcia <hezarco@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=8.5.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [],
+  "dependencies": {
+    "heic2any": "^0.0.1"
+  }
+}
